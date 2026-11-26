@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Constructora Bolívar × Jeeves · Tarjetas, control de gastos y legalización con IA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Inter+Tight:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0B0E;--card:#141418;--card2:#17171C;--green:#00D68F;--gold:#C9A84C;--txt:#F5F5F7;--mut:#9C9CA6;--bd:#26262E}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font-family:Inter,system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:var(--gold)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+h1,h2,h3,h4{font-family:'Inter Tight',Inter,sans-serif;letter-spacing:-.02em}
+.gold{color:var(--gold)}.green{color:var(--green)}
+.top{display:flex;justify-content:space-between;align-items:center;padding:26px 0}
+.brand small{display:block;font-size:10px;letter-spacing:.2em;color:var(--mut);font-weight:500}
+.clogo{height:64px;width:auto;border-radius:4px}
+.hero{padding:30px 0 50px;border-bottom:1px solid var(--bd)}
+.pill{display:inline-block;border:1px solid var(--bd);border-radius:999px;padding:6px 14px;font-size:12px;color:var(--mut);margin-bottom:18px}
+.pill.ok{border-color:#1f3a2f;color:var(--green);background:#0f1a15}
+.hero h1{font-size:clamp(30px,4.6vw,50px);line-height:1.08;font-weight:700;max-width:960px}
+.hero p.lead{color:var(--mut);font-size:17px;max-width:820px;margin-top:18px}
+.stats{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.stat{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:12px 16px}
+.stat b{display:block;font-family:'Inter Tight';font-size:22px;color:var(--gold)}
+.stat span{font-size:12px;color:var(--mut)}
+.cards{display:flex;gap:16px;align-items:flex-end;flex-wrap:wrap;margin-top:34px}
+.cc{display:flex;flex-direction:column;gap:8px}
+.cc-photo{background:#000;border:1px solid var(--bd);border-radius:16px;overflow:hidden}
+.cc-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.cc span{font-size:12px;color:var(--mut)}
+.p-elite{width:190px;height:245px}.p-corp{width:260px;height:156px}.p-virt{width:230px;height:139px}
+nav.jump{display:flex;gap:8px;flex-wrap:wrap;margin-top:30px}
+nav.jump a{font-size:13px;color:var(--mut);text-decoration:none;border:1px solid var(--bd);border-radius:999px;padding:6px 12px}
+nav.jump a:hover{border-color:var(--gold);color:var(--txt)}
+section{padding:56px 0;border-bottom:1px solid var(--bd)}
+.sh{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:24px}
+.sh h2{font-size:clamp(24px,3vw,34px)}
+.sh p{color:var(--mut);max-width:720px;margin-top:6px}
+.tag{display:inline-block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);border:1px solid #4a3d18;border-radius:999px;padding:4px 10px;margin-bottom:10px}
+.res-title{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin:6px 0 12px}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--bd);border-radius:16px;overflow:hidden}
+th,td{text-align:left;padding:14px 16px;border-bottom:1px solid var(--bd);vertical-align:top;font-size:14.5px}
+th{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);background:var(--card2)}
+td:first-child{font-weight:600;width:24%}
+td:nth-child(2){color:var(--mut)}
+tr:last-child td{border-bottom:none}
+.tbl{overflow-x:auto}
+.cmp td{vertical-align:middle}
+.cmp td:nth-child(2),.cmp td:nth-child(3){color:var(--txt);text-align:center;width:30%}
+.cmp th:nth-child(2),.cmp th:nth-child(3){text-align:center}
+.cmp th:nth-child(2){color:var(--gold)}
+.cmp small{color:var(--mut)}
+.cmp td:first-child small{font-weight:400;display:block}
+.cmp tr.grp td{background:var(--card2);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:600;padding:10px 16px}
+.yes{color:var(--green);font-weight:700}.no{color:#ff7a7a;font-weight:700}.soon{color:var(--gold);font-weight:700}
+.cmp-note{font-size:12.5px;color:var(--mut);margin-top:10px}
+.pfm{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:16px}
+.pm{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:22px}
+.pm.g{border-color:#4a3d18;background:linear-gradient(180deg,#1f1a0d,#141418)}
+.pm .ic{font-size:24px}
+.pm h3{font-size:17px;margin:8px 0 6px}
+.pm p{color:var(--mut);font-size:14px}
+.pm .lbl{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-top:10px}
+.pm.g .lbl{color:var(--gold)}
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.wc{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:22px}
+.wc.g{border-color:#4a3d18;background:linear-gradient(180deg,#1f1a0d,#141418)}
+.wc .ic{font-size:24px}
+.wc h3{font-size:17px;margin:8px 0 6px}
+.wc p{color:var(--mut);font-size:14px}
+.wc ul{list-style:none;margin-top:8px}
+.wc li{font-size:13.5px;color:var(--mut);padding:5px 0 5px 20px;position:relative;border-bottom:1px solid #1d1d23}
+.wc li:last-child{border-bottom:none}
+.wc li:before{content:'✓';position:absolute;left:0;color:var(--green);font-weight:700}
+.wc li b{color:var(--txt);font-weight:600}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.chip{font-size:12.5px;border:1px solid var(--bd);border-radius:999px;padding:5px 11px;color:var(--txt);background:var(--card2)}
+.chip.on{border-color:#1f3a2f;color:var(--green);background:#0f1a15}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:6px}
+.st{background:var(--card2);border:1px solid var(--bd);border-radius:14px;padding:16px}
+.st b{display:inline-block;width:26px;height:26px;border-radius:50%;border:1px solid var(--gold);color:var(--gold);font:600 13px/24px Inter;text-align:center;margin-bottom:8px}
+.st h4{font-size:15px;margin-bottom:4px}
+.st p{font-size:13.5px;color:var(--mut)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.three{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.wa{background:#0e1512;border:1px solid #1f3a2f;border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:10px}
+.wa .hd{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--mut);border-bottom:1px solid #1f3a2f;padding-bottom:10px}
+.wa .hd i{width:30px;height:30px;border-radius:50%;background:#1f3a2f;display:flex;align-items:center;justify-content:center;font-style:normal;color:var(--green);font-weight:700;font-size:13px}
+.msg{max-width:86%;font-size:13.5px;padding:9px 12px;border-radius:12px;line-height:1.4}
+.msg.in{background:#1b2420;color:var(--txt);border-top-left-radius:4px}
+.msg.out{background:#123d2c;color:var(--txt);align-self:flex-end;border-top-right-radius:4px}
+.msg small{display:block;color:var(--mut);font-size:11px;margin-top:3px}
+.callout{margin-top:16px;font-size:13.5px;background:#1f1a0d;border:1px solid #4a3d18;color:#e9d9a8;border-radius:12px;padding:12px 14px}
+.xl{margin-top:16px}
+.xl th,.xl td{padding:9px 10px;font-size:12.5px;white-space:nowrap}
+.xl td:first-child{width:auto;font-weight:500}
+.xl td:nth-child(2){color:var(--txt)}
+.xl .cap{font-size:12px;color:var(--mut);margin:8px 0 0}
+.big{font-family:'Inter Tight';font-size:44px;font-weight:800;color:var(--gold);line-height:1}
+.vids{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.vc{background:var(--card);border:1px solid var(--bd);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.vf{position:relative;aspect-ratio:16/9;background:#000;cursor:pointer}
+.vf img{width:100%;height:100%;object-fit:cover;display:block;opacity:.85;transition:opacity .2s}
+.vf:hover img{opacity:1}
+.vf .pl{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.vf .pl span{width:64px;height:64px;border-radius:50%;background:rgba(11,11,14,.75);border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:24px;padding-left:4px}
+.vf iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vb{padding:16px 18px}
+.vb .tag{font-size:11px;padding:3px 10px;margin-bottom:8px}
+.vb h3{font-size:16px;margin-bottom:4px}
+.vb p{font-size:13.5px;color:var(--mut)}
+.hub{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;background:linear-gradient(180deg,#1f1a0d,#141418);border:1px solid #4a3d18;border-radius:18px;padding:22px 24px;margin-bottom:18px}
+.hub h3{font-size:20px}
+.hub p{color:var(--mut);font-size:14px;margin-top:4px;max-width:640px}
+.btn{display:inline-block;background:var(--gold);color:#0B0B0E;border-radius:999px;padding:12px 20px;font:600 14px Inter;text-decoration:none;white-space:nowrap}
+.next{list-style:none;counter-reset:c}
+.next li{counter-increment:c;position:relative;padding:12px 0 12px 42px;border-bottom:1px solid #1d1d23;font-size:14.5px}
+.next li:last-child{border-bottom:none}
+.next li:before{content:counter(c);position:absolute;left:0;top:11px;width:26px;height:26px;border-radius:50%;border:1px solid var(--gold);color:var(--gold);font:600 13px/24px Inter;text-align:center}
+.next li small{display:block;color:var(--mut);font-size:13px}
+footer{padding:36px 0 50px;color:var(--mut);font-size:13.5px}
+footer b{color:var(--txt)}
+@media(max-width:860px){.pfm{grid-template-columns:1fr 1fr}.pfm .pm.g{grid-column:1/-1}}
+@media(max-width:640px){.p-elite{width:150px;height:195px}.p-corp,.p-virt{width:100%;height:auto;aspect-ratio:1.7}.cc{width:100%}.cc:first-child{width:auto}.clogo{height:48px}.pfm{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="top">
+<div class="brand"><img src="https://carlosgomez-cloud.github.io/propuesta_constructorabolivar/jeeves-logo_1.png" alt="Jeeves" style="height:44px;width:auto;display:block"><small style="margin-top:8px">Preparado para</small></div>
+<img class="clogo" src="https://carlosgomez-cloud.github.io/propuesta_constructorabolivar/bolivar-logo.png" alt="Constructora Bolívar">
+</div>
+
+<div class="hero">
+<span class="pill ok">Producto y comparativo · Noviembre 2026</span>
+<h1>Tarjetas corporativas con <span class="gold">control total</span>, viáticos según su política y <span class="green">legalización de gastos resuelta con IA</span>.</h1>
+<p class="lead">Resumen de lo que revisamos con los equipos de Gasto Administrativo, Administrativo y Soluciones Digitales de Constructora Bolívar: cómo se crean y controlan las tarjetas, cómo se legaliza cada gasto por WhatsApp y cómo llega la información contable a su ERP. También comparamos Jeeves con la plataforma que usan hoy.</p>
+<div class="stats">
+<div class="stat"><b>26 países</b><span>presencia Jeeves · Clara opera en 3</span></div>
+<div class="stat"><b>+USD 5.000M</b><span>transaccionados en la plataforma</span></div>
+<div class="stat"><b>Masiva</b><span>creación de tarjetas · Clara: 1 a 1</span></div>
+<div class="stat"><b>4 tipos</b><span>de límite · diario, semanal, mensual, de por vida</span></div>
+<div class="stat"><b>WhatsApp</b><span>agente de IA que legaliza cada gasto</span></div>
+</div>
+<div class="cards">
+<div class="cc"><div class="cc-photo p-elite"><img src="https://carlosgomez-cloud.github.io/propuesta_renting/jeeves-world-elite.png" alt="Tarjeta Black World Elite"></div><span>Black · Alta gerencia y viajeros frecuentes</span></div>
+<div class="cc"><div class="cc-photo p-corp"><img src="https://carlosgomez-cloud.github.io/propuesta_renting/jeeves-corporativa.png" alt="Tarjeta Corporativa"></div><span>Corporativa física · Viáticos y equipos</span></div>
+<div class="cc"><div class="cc-photo p-virt"><img src="https://carlosgomez-cloud.github.io/propuesta_renting/jeeves-virtual.png" alt="Tarjeta Virtual"></div><span>Virtual · Compras en línea y viajes</span></div>
+</div>
+<nav class="jump">
+<a href="#diag">Diagnóstico</a><a href="#portafolio">Portafolio</a><a href="#tarjetas">Tarjetas</a><a href="#viaticos">Viáticos</a><a href="#legalizacion">Legalización con IA</a><a href="#contable">Contabilidad y ERP</a><a href="#comparativo">Jeeves vs. Clara</a><a href="#videos">Videos</a>
+</nav>
+</div>
+
+<section id="diag">
+<div class="sh"><div><h2>Diagnóstico</h2><p>Lo que conversamos en la reunión y cómo lo resuelve Jeeves. El detalle de cada punto está más abajo.</p></div></div>
+<div class="tbl"><table>
+<tr><th>Frente</th><th>Hoy</th><th>Con Jeeves</th></tr>
+<tr><td>Tarjetas de viáticos</td><td>Tarjetas asignadas a funcionarios, creadas una a una y con límites diarios o mensuales.</td><td>Creación masiva o por solicitud de viaje, con presupuesto según la política y tarjeta activa solo en las fechas del viaje.</td></tr>
+<tr><td>Soportes y legalización</td><td>Se descargan los soportes y reportes de la plataforma y se trabajan aparte para subirlos al ERP.</td><td>Un agente de IA pide el soporte por WhatsApp apenas ocurre la compra y lo asocia a la transacción automáticamente.</td></tr>
+<tr><td>Revisión del gasto</td><td>Revisión transacción por transacción para confirmar que haya factura y que corresponda.</td><td>Un agente revisa todo y entrega solo la lista de transacciones sin soporte o con inconsistencias.</td></tr>
+<tr><td>Requisitos de la factura</td><td>Validación manual de que la factura sea electrónica y esté a nombre de Constructora Bolívar.</td><td>Validación automática de factura electrónica y razón social · en desarrollo, fecha estimada 1T 2027.</td></tr>
+<tr><td>Contabilidad</td><td>Clasificación por grupos e ítems de gasto; el ERP recibe la información por plantilla de importación.</td><td>Cada gasto llega con su cuenta GL, centro de costo, grupo e ítem, y se envía al ERP vía API (incluida la API propia de Constructora Bolívar).</td></tr>
+<tr><td>Fecha de corte</td><td>Corte fijo asignado por la plataforma (día 25).</td><td>Constructora Bolívar elige su fecha de corte; extracto al día siguiente y 7 días hábiles para pagar.</td></tr>
+</table></div>
+</section>
+
+<section id="portafolio">
+<div class="sh"><div><h2>Portafolio Jeeves</h2><p>Una sola plataforma financiera. Nos enfocamos en tarjetas, control y legalización de gastos; el resto del portafolio queda disponible para cuando Constructora Bolívar lo necesite.</p></div></div>
+<div class="pfm">
+<div class="pm g"><div class="ic">💳</div><h3>Tarjetas corporativas y control de gastos</h3><p>Tarjetas Mastercard físicas, virtuales y Black con aceptación global; el consumo en cualquier moneda se convierte a pesos. Control por tarjeta, categoría y comercio, política de viáticos, legalización con agentes de IA e integración contable.</p><div class="lbl">Foco de este documento</div></div>
+<div class="pm"><div class="ic">🏦</div><h3>Jeeves Pay</h3><p>Pagos a proveedores en cualquier banco de Colombia, dispersados desde el mismo cupo. Hasta 1.500 pagos por lote.</p><div class="lbl">Disponible</div></div>
+<div class="pm"><div class="ic">🌐</div><h3>Pagos internacionales con stablecoins</h3><p>Cuenta para fondear desde pesos y pagar al exterior en dólares, euros u otras monedas.</p><div class="lbl">Disponible</div></div>
+<div class="pm"><div class="ic">🤖</div><h3>Agentes de IA para finanzas</h3><p>Conciliación bancaria unificada y automatización de pagos manuales.</p><div class="lbl">Próximo lanzamiento</div></div>
+</div>
+</section>
+
+<section id="tarjetas">
+<div class="sh"><div><span class="tag">Tarjetas corporativas</span><h2>Creación y control de tarjetas</h2><p>Cada tarjeta se configura con exactamente lo que necesita: quién la usa, cuánto, cuándo y dónde.</p></div></div>
+<div class="feat">
+<div class="wc"><div class="ic">⚡</div><h3>Creación masiva</h3><p>Cree 100 o 200 tarjetas en una sola operación, físicas o virtuales. En la plataforma actual se crean una a una.</p></div>
+<div class="wc"><div class="ic">📊</div><h3>Cuatro tipos de límite</h3><p>Defina el cupo de cada tarjeta según su uso:</p><div class="chips"><span class="chip">Diario</span><span class="chip on">Semanal</span><span class="chip">Mensual</span><span class="chip on">De por vida</span></div><p style="margin-top:8px;font-size:12.5px">En verde, los que no ofrece la plataforma actual.</p></div>
+<div class="wc"><div class="ic">📅</div><h3>Vigencia por fechas</h3><p>La tarjeta funciona solo entre las fechas que usted defina, por ejemplo los días de un viaje o de una obra.</p></div>
+<div class="wc"><div class="ic">🎯</div><h3>Control por categoría y comercio</h3><ul><li><b>Bloquear</b> categorías (licor, entretenimiento…)</li><li><b>Habilitar solo</b> una categoría, por ejemplo alimentación</li><li><b>Limitar a un comercio</b> específico</li></ul></div>
+<div class="wc g"><div class="ic">🎁</div><h3>Tarjetas de por vida</h3><p>Se cargan con un monto que queda disponible hasta que se consume y se recargan cuando lo necesite. Casos para Constructora Bolívar:</p><ul><li>Bonos de dotación</li><li>Premiaciones al equipo comercial</li><li>Bonificación a referidos por venta de vivienda</li></ul></div>
+<div class="wc"><div class="ic">🖤</div><h3>Tarjeta Black</h3><p>Para alta gerencia y personas con alta necesidad de viaje, con un paquete amplio de seguros y beneficios Mastercard.</p></div>
+<div class="wc"><div class="ic">⏱️</div><h3>Visibilidad en tiempo real</h3><p>Cada transacción aparece al instante con monto, moneda, usuario, área, comercio, categoría y soporte. Puede conciliar a diario, sin esperar el extracto.</p></div>
+<div class="wc"><div class="ic">🔄</div><h3>Cupo revolvente y ajustes al instante</h3><p>Si un usuario necesita más cupo, lo pide desde la app y el administrador lo ajusta en tiempo real. Al pagar, el cupo se libera de inmediato.</p></div>
+</div>
+</section>
+
+<section id="viaticos">
+<div class="sh"><div><span class="tag">Viáticos</span><h2>La política de viáticos de Constructora Bolívar, dentro de la plataforma</h2><p>Se carga una sola vez y el sistema ajusta topes y presupuestos a esa política. Sin anticipos y sin calcular a mano cuánto darle a cada viajero.</p></div></div>
+<div class="steps">
+<div class="st"><b>1</b><h4>Solicitud del viaje</h4><p>El colaborador indica origen, destino y fechas, por ejemplo Medellín – Bogotá del 26 al 28.</p></div>
+<div class="st"><b>2</b><h4>Presupuesto automático</h4><p>Jeeves calcula el valor que corresponde según la política de viáticos cargada.</p></div>
+<div class="st"><b>3</b><h4>Aprobación</h4><p>La solicitud llega al jefe directo o a quien defina la compañía.</p></div>
+<div class="st"><b>4</b><h4>Tarjeta con el monto exacto</h4><p>Se crea la tarjeta física o virtual, cargada con el valor aprobado y activa solo en las fechas del viaje.</p></div>
+<div class="st"><b>5</b><h4>Próximos viajes</h4><p>La misma tarjeta recibe el presupuesto de cada nueva solicitud. No hay que crear otra.</p></div>
+</div>
+<div class="callout">Las personas con gastos de representación recurrentes reciben tarjetas abiertas, creadas por el flujo tradicional y con sus propios límites. El flujo de viajes es para viáticos y lo que hoy se maneja como anticipos.</div>
+</section>
+
+<section id="legalizacion">
+<div class="sh"><div><span class="tag">Agentes de IA</span><h2>Legalización de gastos por WhatsApp</h2><p>El usuario no tiene que entrar a la plataforma, buscar la transacción ni recordar su clave. El agente se encarga.</p></div></div>
+<div class="two">
+<div class="wa">
+<div class="hd"><i>J</i> Asistente Jeeves · WhatsApp</div>
+<div class="msg in">Acaba de entrar tu compra en <b>Leños</b>. Envía el recibo por aquí y lo asocio automáticamente.<small>12:41</small></div>
+<div class="msg out">📎 factura_lenos.jpg<small>12:42</small></div>
+<div class="msg in">Gracias, lo recibimos. Estamos buscando la transacción correspondiente…<small>12:42</small></div>
+<div class="msg in">✅ Tu recibo quedó vinculado a la transacción de Leños. ¿Cuál fue el propósito de esta compra?<small>12:43</small></div>
+<div class="msg out">Alimentación · visita de obra<small>12:43</small></div>
+</div>
+<div class="wc" style="display:flex;flex-direction:column;gap:6px">
+<h3 style="margin-top:0">Lo que hace el agente</h3>
+<ul>
+<li><b>Escribe apenas ocurre la compra</b> y asocia el soporte en menos de un minuto</li>
+<li><b>Match estricto</b>: si el soporte no corresponde a ninguna transacción, lo rechaza</li>
+<li><b>Varios recibos a la vez</b>: si envía 5 o 20 al final del día, los concilia uno a uno</li>
+<li><b>Tiene memoria</b>: puede responder al día siguiente sin perder el hilo</li>
+<li><b>Pregunta el propósito</b> para asignar grupo, ítem, cuenta GL o centro de costo</li>
+<li><b>Recordatorios por correo</b> de los soportes pendientes</li>
+</ul>
+</div>
+</div>
+<div class="res-title" style="margin-top:28px">Controles y auditoría</div>
+<div class="three">
+<div class="wc"><div class="ic">🔍</div><h3>Agente auditor</h3><p>Revisa todas las transacciones, confirma que tengan soporte y que el soporte corresponda al gasto. El equipo de Gasto Administrativo recibe solo la lista de lo que tiene inconsistencias o no tiene soporte.</p></div>
+<div class="wc"><div class="ic">📏</div><h3>Reglas de soporte</h3><p>Defina qué gastos exigen soporte, por ejemplo los mayores a COP 50.000, y bloquee la tarjeta cuando alguien acumule los soportes pendientes que usted determine.</p></div>
+<div class="wc"><div class="ic">🧾</div><h3>Factura a nombre de Constructora Bolívar <span class="soon" style="font-size:12px">· 1T 2027</span></h3><p>Validación automática de que la factura sea electrónica y esté a nombre de la razón social, con aviso al usuario para corregirla. En desarrollo; fecha estimada por confirmar.</p></div>
+</div>
+</section>
+
+<section id="contable">
+<div class="sh"><div><span class="tag">Contabilidad</span><h2>Del gasto al ERP, sin procesos manuales</h2><p>La información contable se arma con la estructura de Constructora Bolívar, no con la del proveedor.</p></div></div>
+<div class="three">
+<div class="wc g"><div class="ic">🔌</div><h3>Vía 1 · API de Jeeves sin costo</h3><p>Entregamos la API y la documentación técnica para que el equipo de Soluciones Digitales defina qué campos tomar y con qué frecuencia. A diferencia de una integración nativa, la empresa no tiene que acomodarse a los campos del proveedor.</p></div>
+<div class="wc g"><div class="ic">⚙️</div><h3>Vía 2 · Envío a la API de Constructora Bolívar</h3><p>Como lo planteó el equipo de tecnología: el archivo con la estructura de cuentas por pagar se envía directo a la API que ya crea los documentos contables en el ERP. Sin descargas ni cargues.</p></div>
+<div class="wc"><div class="ic">📄</div><h3>Vía 3 · Archivo con la estructura de su ERP</h3><p>Se exporta exactamente con las columnas que recibe la plantilla de importación del ERP, listo para cargar.</p></div>
+</div>
+<div class="steps" style="margin-top:16px">
+<div class="st"><b>1</b><h4>Importación única</h4><p>Se cargan desde el ERP las cuentas GL, centros de costo, proveedores y la clasificación por grupos e ítems. También se pueden crear a mano.</p></div>
+<div class="st"><b>2</b><h4>Enlace por tipo de gasto</h4><p>Cada grupo o ítem queda enlazado a su cuenta y centro de costo; también puede asignarse por área o proyecto.</p></div>
+<div class="st"><b>3</b><h4>Datos automáticos</h4><p>Cada transacción llega clasificada. Si lo prefieren, algunos campos los diligencia el usuario.</p></div>
+<div class="st"><b>4</b><h4>Al ERP</h4><p>La cuenta por pagar se crea vía API o con el archivo, sin transcribir información.</p></div>
+</div>
+<div class="xl">
+<div class="res-title" style="margin-top:20px">Ejemplo del registro contable</div>
+<div class="tbl"><table>
+<tr><th>Fecha</th><th>Tarjeta · Usuario</th><th>Comercio</th><th>NIT</th><th>Valor COP</th><th>Grupo · Ítem</th><th>Cuenta GL</th><th>Centro de costo</th><th>Soporte</th></tr>
+<tr><td>2026-11-18</td><td>•• 4821 · Regional Centro</td><td>Hotel Bogotá</td><td>900.123.456-7</td><td>420.000</td><td>Viáticos · Alojamiento</td><td>519525</td><td>Proyecto 0142</td><td class="green">✓ Factura</td></tr>
+<tr><td>2026-11-19</td><td>•• 7730 · Regional Sur</td><td>Leños</td><td>901.555.210-3</td><td>96.000</td><td>Viáticos · Alimentación</td><td>519530</td><td>Proyecto 0087</td><td class="green">✓ Factura</td></tr>
+<tr><td>2026-11-20</td><td>•• 1192 · Administrativo</td><td>Papelería</td><td>800.987.654-1</td><td>185.000</td><td>Gasto adm. · Papelería</td><td>519530</td><td>Adm. Nacional</td><td class="gold">⚠ Sin soporte</td></tr>
+</table></div>
+<div class="cap">Ejemplo ilustrativo. Las columnas y los códigos se ajustan a la estructura contable de Constructora Bolívar.</div>
+</div>
+</section>
+
+<section id="comparativo">
+<div class="sh"><div><h2>Jeeves vs. Clara</h2><p>Comparativo de compañía, portafolio y producto, con foco en tarjetas, control de gastos y legalización.</p></div></div>
+<div class="tbl"><table class="cmp">
+<tr><th>Capacidad</th><th>Jeeves</th><th>Clara</th></tr>
+<tr class="grp"><td colspan="3">Compañía y presencia</td></tr>
+<tr><td>Origen</td><td><b class="gold">Estadounidense</b><small>Regulación de Estados Unidos</small></td><td>Mexicana</td></tr>
+<tr><td>Presencia</td><td><b class="gold">26 países</b><small>EE. UU., Canadá, Reino Unido, Unión Europea y Latinoamérica, más tarjetas en dólares para Centroamérica</small></td><td>3 países<small>México, Brasil y Colombia</small></td></tr>
+<tr><td>Volumen transaccionado</td><td><b class="gold">+USD 5.000 millones</b></td><td>—</td></tr>
+<tr class="grp"><td colspan="3">Portafolio</td></tr>
+<tr><td>Tarjetas corporativas físicas, virtuales y Black</td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td></tr>
+<tr><td>Pagos a proveedores desde el cupo<small>Dispersión a cuentas en cualquier banco</small></td><td><span class="yes">✓ Jeeves Pay</span><small>Hasta 1.500 pagos por lote</small></td><td><small>Pago de facturas con tarjeta</small></td></tr>
+<tr><td>Pagos internacionales con stablecoins</td><td><span class="yes">✓</span></td><td>—</td></tr>
+<tr><td>Agentes de IA para conciliación y pagos</td><td><span class="soon">Próximamente</span></td><td>—</td></tr>
+<tr class="grp"><td colspan="3">Tarjetas y control</td></tr>
+<tr><td>Creación de tarjetas</td><td><span class="yes">✓ Masiva</span><small>Cientos en una sola operación</small></td><td>Una a una</td></tr>
+<tr><td>Tipos de límite</td><td><span class="yes">✓ 4</span><small>Diario, semanal, mensual y de por vida</small></td><td>Diario y mensual</td></tr>
+<tr><td>Tarjetas de por vida (recargables)<small>Dotación, premiaciones, referidos</small></td><td><span class="yes">✓</span></td><td>—</td></tr>
+<tr><td>Vigencia por fechas</td><td><span class="yes">✓</span></td><td>—</td></tr>
+<tr><td>Control por categoría y comercio</td><td><span class="yes">✓</span><small>Bloquear, habilitar solo una categoría o limitar a un comercio</small></td><td>Bloqueo de categorías</td></tr>
+<tr><td>Política de viáticos cargada<small>Solicitud de viaje, presupuesto automático y aprobación</small></td><td><span class="yes">✓</span><small>Tarjeta activa solo en las fechas del viaje</small></td><td>—</td></tr>
+<tr><td>Fecha de corte</td><td><span class="yes">✓ La elige la empresa</span><small>Extracto al día siguiente · 7 días hábiles para pagar</small></td><td>Asignada por la plataforma</td></tr>
+<tr class="grp"><td colspan="3">Legalización y contabilidad</td></tr>
+<tr><td>Legalización por WhatsApp con agente de IA</td><td><span class="yes">✓</span><small>Asocia el soporte a la transacción en menos de un minuto</small></td><td>—<small>Hoy: descarga de soportes y reportes</small></td></tr>
+<tr><td>Agente que audita soportes</td><td><span class="yes">✓</span><small>Entrega solo las inconsistencias</small></td><td>—</td></tr>
+<tr><td>Reglas de soporte y bloqueo por pendientes</td><td><span class="yes">✓</span></td><td>—</td></tr>
+<tr><td>Validación de factura electrónica y razón social</td><td><span class="soon">1T 2027</span><small>Fecha estimada</small></td><td>—</td></tr>
+<tr><td>Integración con el ERP</td><td><span class="yes">✓ API sin costo</span><small>O envío a la API de Constructora Bolívar, o archivo con su estructura</small></td><td><small>Conectores nativos: la empresa se acomoda a los campos del proveedor</small></td></tr>
+<tr class="grp"><td colspan="3">Lo que no cambia</td></tr>
+<tr><td>Aceptación</td><td><span class="yes">✓ Mastercard global</span><small>Cualquier país y moneda; deuda en pesos</small></td><td><span class="yes">✓ Mastercard global</span></td></tr>
+</table></div>
+<div class="cmp-note">Información de Clara según la plataforma que opera hoy Constructora Bolívar y la información pública de la compañía; puede variar. Las funciones marcadas como "Próximamente" o con fecha estimada están en desarrollo.</div>
+</section>
+
+<section id="videos">
+<div class="sh"><div><h2>Véalo en acción</h2><p>Videos cortos sobre lo que revisamos: la plataforma, los soportes y la legalización de viáticos.</p></div></div>
+<div class="hub">
+<div><h3>🎬 Conoce la plataforma · Demo</h3><p><b style="color:var(--txt)">Conoce a Jeeves, paso a paso:</b> tutoriales para crear tarjetas, invitar al equipo, usar el asistente de IA y las herramientas de contabilidad (Colombia · español).</p></div>
+<a class="btn" href="https://welcome-jeeves.jeeves-8317.chatgpt.site/" target="_blank" rel="noopener">Conoce a Jeeves ↗</a>
+</div>
+<div class="vids">
+<div class="vc"><div class="vf" data-v="ol8S1W9aeas"><img src="https://i.ytimg.com/vi/ol8S1W9aeas/hqdefault.jpg" alt=""><div class="pl"><span>▶</span></div></div><div class="vb"><span class="tag">Demo · Captura y legalización</span><h3>Guía de la plataforma Jeeves en Colombia</h3><p>Recorrido por tarjetas, transacciones con soportes faltantes, equipos, integración contable y políticas de aprobación.</p></div></div>
+<div class="vc"><div class="vf" data-v="Fgnr3yAzhYc"><img src="https://i.ytimg.com/vi/Fgnr3yAzhYc/hqdefault.jpg" alt=""><div class="pl"><span>▶</span></div></div><div class="vb"><span class="tag">Soportes y facturas</span><h3>Facturas de todos los gastos en un solo lugar</h3><p>Caso H&amp;M: soportes centralizados para la conciliación.</p></div></div>
+<div class="vc"><div class="vf" data-v="R1sPPtjGIBQ"><img src="https://i.ytimg.com/vi/R1sPPtjGIBQ/hqdefault.jpg" alt=""><div class="pl"><span>▶</span></div></div><div class="vb"><span class="tag">Viáticos</span><h3>Viáticos legalizados en el momento de la compra</h3><p>Caso Burger King: cada viajero paga con su tarjeta, sube la foto de la factura y la legalización queda hecha.</p></div></div>
+<div class="vc"><div class="vf" data-v="aDBybQsWovc"><img src="https://i.ytimg.com/vi/aDBybQsWovc/hqdefault.jpg" alt=""><div class="pl"><span>▶</span></div></div><div class="vb"><span class="tag">Credenciales</span><h3>Por qué los CFO eligen Jeeves</h3><p>Lo que dicen los equipos financieros que ya trabajan con Jeeves.</p></div></div>
+</div>
+</section>
+
+<section id="siguientes">
+<div class="sh"><div><h2>Próximos pasos</h2></div></div>
+<div class="wc"><ol class="next">
+<li>Documentación técnica de la API de Jeeves<small>Para el equipo de Soluciones Digitales y su arquitecto, junto con la arquitectura de la aplicación.</small></li>
+<li>Fecha de la validación automática de facturas<small>Confirmar el estado y la fecha estimada de la validación de factura electrónica a nombre de Constructora Bolívar.</small></li>
+<li>Sesión técnica de integración<small>Revisar el envío de la información contable a la API de Constructora Bolívar y la estructura de grupos e ítems.</small></li>
+</ol></div>
+</section>
+
+<footer>
+<b>Carlos Gómez</b> · Senior Enterprise AE · Jeeves Colombia · carlos.gomez@tryjeeves.com · +57 316 480 1023<br>
+<span style="font-size:12px">Documento informativo de producto. Las funciones en desarrollo pueden cambiar de fecha.</span>
+</footer>
+</div>
+
+<script>
+document.querySelectorAll('.vf').forEach(function(el){el.addEventListener('click',function(){if(el.querySelector('iframe'))return;var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+el.dataset.v+'?autoplay=1&rel=0';f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;el.innerHTML='';el.appendChild(f);});});
+</script>
+</body>
+</html>
