@@ -138,13 +138,12 @@ footer b{color:var(--txt)}
 <div class="hero">
 <span class="pill ok">Producto y comparativo · Noviembre 2026</span>
 <h1>Tarjetas corporativas con <span class="gold">control total</span>, viáticos según su política y <span class="green">legalización de gastos resuelta con IA</span>.</h1>
-<p class="lead">Resumen de lo que revisamos con los equipos de Gasto Administrativo, Administrativo y Soluciones Digitales de Constructora Bolívar: cómo se crean y controlan las tarjetas, cómo se legaliza cada gasto por WhatsApp y cómo llega la información contable a su ERP. También comparamos Jeeves con la plataforma que usan hoy.</p>
+<p class="lead">Resumen de lo que revisamos con los equipos Financiero, de Tarjetas y de Soluciones Digitales de Constructora Bolívar: cómo se crean y controlan las tarjetas, cómo se legaliza cada gasto por WhatsApp y cómo llega la información contable a su ERP. También comparamos Jeeves con la plataforma que usan hoy.</p>
 <div class="stats">
 <div class="stat"><b>26 países</b><span>presencia Jeeves · Clara opera en 3</span></div>
 <div class="stat"><b>+USD 5.000M</b><span>transaccionados en la plataforma</span></div>
-<div class="stat"><b>Masiva</b><span>creación de tarjetas · Clara: 1 a 1</span></div>
-<div class="stat"><b>4 tipos</b><span>de límite · diario, semanal, mensual, de por vida</span></div>
-<div class="stat"><b>WhatsApp</b><span>agente de IA que legaliza cada gasto</span></div>
+<div class="stat"><b>Clientes que confían en Jeeves</b><span>Alpina · Nu · Burger King · Riopaila</span></div>
+<div class="stat"><b>Sector constructor</b><span>Conconcreto · Contex</span></div>
 </div>
 <div class="cards">
 <div class="cc"><div class="cc-photo p-elite"><img src="https://carlosgomez-cloud.github.io/propuesta_renting/jeeves-world-elite.png" alt="Tarjeta Black World Elite"></div><span>Black · Alta gerencia y viajeros frecuentes</span></div>
@@ -164,7 +163,7 @@ footer b{color:var(--txt)}
 <tr><td>Soportes y legalización</td><td>Se descargan los soportes y reportes de la plataforma y se trabajan aparte para subirlos al ERP.</td><td>Un agente de IA pide el soporte por WhatsApp apenas ocurre la compra y lo asocia a la transacción automáticamente.</td></tr>
 <tr><td>Revisión del gasto</td><td>Revisión transacción por transacción para confirmar que haya factura y que corresponda.</td><td>Un agente revisa todo y entrega solo la lista de transacciones sin soporte o con inconsistencias.</td></tr>
 <tr><td>Requisitos de la factura</td><td>Validación manual de que la factura sea electrónica y esté a nombre de Constructora Bolívar.</td><td>Validación automática de factura electrónica y razón social · en desarrollo, fecha estimada 1T 2027.</td></tr>
-<tr><td>Contabilidad</td><td>Clasificación por grupos e ítems de gasto; el ERP recibe la información por plantilla de importación.</td><td>Cada gasto llega con su cuenta GL, centro de costo, grupo e ítem, y se envía al ERP vía API (incluida la API propia de Constructora Bolívar).</td></tr>
+<tr><td>Contabilidad</td><td>Clasificación por grupos e ítems de gasto; el ERP recibe la información por plantilla de importación.</td><td>Cada gasto llega con su cuenta GL, centro de costo, grupo e ítem, y llega al ERP vía API o con un archivo en su estructura.</td></tr>
 <tr><td>Fecha de corte</td><td>Corte fijo asignado por la plataforma (día 25).</td><td>Constructora Bolívar elige su fecha de corte; extracto al día siguiente y 7 días hábiles para pagar.</td></tr>
 </table></div>
 </section>
@@ -238,10 +237,9 @@ footer b{color:var(--txt)}
 
 <section id="contable">
 <div class="sh"><div><span class="tag">Contabilidad</span><h2>Del gasto al ERP, sin procesos manuales</h2><p>La información contable se arma con la estructura de Constructora Bolívar, no con la del proveedor.</p></div></div>
-<div class="three">
+<div class="two">
 <div class="wc g"><div class="ic">🔌</div><h3>Vía 1 · API de Jeeves sin costo</h3><p>Entregamos la API y la documentación técnica para que el equipo de Soluciones Digitales defina qué campos tomar y con qué frecuencia. A diferencia de una integración nativa, la empresa no tiene que acomodarse a los campos del proveedor.</p></div>
-<div class="wc g"><div class="ic">⚙️</div><h3>Vía 2 · Envío a la API de Constructora Bolívar</h3><p>Como lo planteó el equipo de tecnología: el archivo con la estructura de cuentas por pagar se envía directo a la API que ya crea los documentos contables en el ERP. Sin descargas ni cargues.</p></div>
-<div class="wc"><div class="ic">📄</div><h3>Vía 3 · Archivo con la estructura de su ERP</h3><p>Se exporta exactamente con las columnas que recibe la plantilla de importación del ERP, listo para cargar.</p></div>
+<div class="wc"><div class="ic">📄</div><h3>Vía 2 · Archivo con la estructura de su ERP</h3><p>Se exporta exactamente con las columnas que recibe la plantilla de importación del ERP, listo para cargar.</p></div>
 </div>
 <div class="steps" style="margin-top:16px">
 <div class="st"><b>1</b><h4>Importación única</h4><p>Se cargan desde el ERP las cuentas GL, centros de costo, proveedores y la clasificación por grupos e ítems. También se pueden crear a mano.</p></div>
@@ -273,7 +271,6 @@ footer b{color:var(--txt)}
 <tr><td>Tarjetas corporativas físicas, virtuales y Black</td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td></tr>
 <tr><td>Pagos a proveedores desde el cupo<small>Dispersión a cuentas en cualquier banco</small></td><td><span class="yes">✓ Jeeves Pay</span><small>Hasta 1.500 pagos por lote</small></td><td><small>Pago de facturas con tarjeta</small></td></tr>
 <tr><td>Pagos internacionales con stablecoins</td><td><span class="yes">✓</span></td><td>—</td></tr>
-<tr><td>Agentes de IA para conciliación y pagos</td><td><span class="soon">Próximamente</span></td><td>—</td></tr>
 <tr class="grp"><td colspan="3">Tarjetas y control</td></tr>
 <tr><td>Creación de tarjetas</td><td><span class="yes">✓ Masiva</span><small>Cientos en una sola operación</small></td><td>Una a una</td></tr>
 <tr><td>Tipos de límite</td><td><span class="yes">✓ 4</span><small>Diario, semanal, mensual y de por vida</small></td><td>Diario y mensual</td></tr>
@@ -287,11 +284,11 @@ footer b{color:var(--txt)}
 <tr><td>Agente que audita soportes</td><td><span class="yes">✓</span><small>Entrega solo las inconsistencias</small></td><td>—</td></tr>
 <tr><td>Reglas de soporte y bloqueo por pendientes</td><td><span class="yes">✓</span></td><td>—</td></tr>
 <tr><td>Validación de factura electrónica y razón social</td><td><span class="soon">1T 2027</span><small>Fecha estimada</small></td><td>—</td></tr>
-<tr><td>Integración con el ERP</td><td><span class="yes">✓ API sin costo</span><small>O envío a la API de Constructora Bolívar, o archivo con su estructura</small></td><td><small>Conectores nativos: la empresa se acomoda a los campos del proveedor</small></td></tr>
+<tr><td>Integración con el ERP</td><td><span class="yes">✓ API sin costo</span><small>O archivo con la estructura de su ERP</small></td><td><small>Conectores nativos: la empresa se acomoda a los campos del proveedor</small></td></tr>
 <tr class="grp"><td colspan="3">Lo que no cambia</td></tr>
 <tr><td>Aceptación</td><td><span class="yes">✓ Mastercard global</span><small>Cualquier país y moneda; deuda en pesos</small></td><td><span class="yes">✓ Mastercard global</span></td></tr>
 </table></div>
-<div class="cmp-note">Información de Clara según la plataforma que opera hoy Constructora Bolívar y la información pública de la compañía; puede variar. Las funciones marcadas como "Próximamente" o con fecha estimada están en desarrollo.</div>
+<div class="cmp-note">Información de Clara según la plataforma que opera hoy Constructora Bolívar y la información pública de la compañía; puede variar. Las funciones con fecha estimada están en desarrollo.</div>
 </section>
 
 <section id="videos">
@@ -308,14 +305,6 @@ footer b{color:var(--txt)}
 </div>
 </section>
 
-<section id="siguientes">
-<div class="sh"><div><h2>Próximos pasos</h2></div></div>
-<div class="wc"><ol class="next">
-<li>Documentación técnica de la API de Jeeves<small>Para el equipo de Soluciones Digitales y su arquitecto, junto con la arquitectura de la aplicación.</small></li>
-<li>Fecha de la validación automática de facturas<small>Confirmar el estado y la fecha estimada de la validación de factura electrónica a nombre de Constructora Bolívar.</small></li>
-<li>Sesión técnica de integración<small>Revisar el envío de la información contable a la API de Constructora Bolívar y la estructura de grupos e ítems.</small></li>
-</ol></div>
-</section>
 
 <footer>
 <b>Carlos Gómez</b> · Senior Enterprise AE · Jeeves Colombia · carlos.gomez@tryjeeves.com · +57 316 480 1023<br>
