@@ -109,6 +109,9 @@ tr:last-child td{border-bottom:none}
 .vf .pl{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
 .vf .pl span{width:64px;height:64px;border-radius:50%;background:rgba(11,11,14,.75);border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:24px;padding-left:4px}
 .vf iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vf.vl{cursor:default}
+.vf video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#000}
+@media(min-width:900px){.vids{grid-template-columns:repeat(3,1fr)}}
 .vb{padding:16px 18px}
 .vb .tag{font-size:11px;padding:3px 10px;margin-bottom:8px}
 .vb h3{font-size:16px;margin-bottom:4px}
@@ -303,6 +306,8 @@ footer b{color:var(--txt)}
 </div>
 <div class="vids">
 <div class="vc"><div class="vf" data-v="ol8S1W9aeas"><img src="https://i.ytimg.com/vi/ol8S1W9aeas/hqdefault.jpg" alt=""><div class="pl"><span>▶</span></div></div><div class="vb"><span class="tag">Demo · Captura y legalización</span><h3>Guía de la plataforma Jeeves en Colombia</h3><p>Recorrido por tarjetas, transacciones con soportes faltantes, equipos, integración contable y políticas de aprobación.</p></div></div>
+<div class="vc"><div class="vf vl"><video controls preload="none" playsinline poster="jeeves-video-03.jpg"><source src="jeeves-video-03.mp4" type="video/mp4"></video></div><div class="vb"><span class="tag">Agentes de IA</span><h3>Asistente de IA</h3><p>Pregunte con sus palabras y obtenga en segundos tendencias de gasto, cargos recurrentes, tarjetas inactivas y reportes descargables.</p></div></div>
+<div class="vc"><div class="vf vl"><video controls preload="none" playsinline poster="jeeves-video-04.jpg"><source src="jeeves-video-04.mp4" type="video/mp4"></video></div><div class="vb"><span class="tag">Contabilidad</span><h3>Contabilidad en automático</h3><p>Categorías, reglas contables y exportación al ERP: cada gasto queda clasificado y listo para registrar.</p></div></div>
 <div class="vc"><div class="vf" data-v="Fgnr3yAzhYc"><img src="https://i.ytimg.com/vi/Fgnr3yAzhYc/hqdefault.jpg" alt=""><div class="pl"><span>▶</span></div></div><div class="vb"><span class="tag">Soportes y facturas</span><h3>Facturas de todos los gastos en un solo lugar</h3><p>Caso H&amp;M: soportes centralizados para la conciliación.</p></div></div>
 <div class="vc"><div class="vf" data-v="R1sPPtjGIBQ"><img src="https://i.ytimg.com/vi/R1sPPtjGIBQ/hqdefault.jpg" alt=""><div class="pl"><span>▶</span></div></div><div class="vb"><span class="tag">Viáticos</span><h3>Viáticos legalizados en el momento de la compra</h3><p>Caso Burger King: cada viajero paga con su tarjeta, sube la foto de la factura y la legalización queda hecha.</p></div></div>
 <div class="vc"><div class="vf" data-v="aDBybQsWovc"><img src="https://i.ytimg.com/vi/aDBybQsWovc/hqdefault.jpg" alt=""><div class="pl"><span>▶</span></div></div><div class="vb"><span class="tag">Credenciales</span><h3>Por qué los CFO eligen Jeeves</h3><p>Lo que dicen los equipos financieros que ya trabajan con Jeeves.</p></div></div>
@@ -317,7 +322,7 @@ footer b{color:var(--txt)}
 </div>
 
 <script>
-document.querySelectorAll('.vf').forEach(function(el){el.addEventListener('click',function(){if(el.querySelector('iframe'))return;var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+el.dataset.v+'?autoplay=1&rel=0';f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;el.innerHTML='';el.appendChild(f);});});
+document.querySelectorAll('.vf:not(.vl)').forEach(function(el){el.addEventListener('click',function(){if(el.querySelector('iframe'))return;var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+el.dataset.v+'?autoplay=1&rel=0';f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;el.innerHTML='';el.appendChild(f);});});
 </script>
 </body>
 </html>
